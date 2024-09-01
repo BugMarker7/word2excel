@@ -23,7 +23,7 @@ if __name__ == '__main__':
 
     assert os.path.isfile(
         args.template_file), f'模板文件{args.template_file}不存在或者不是一个文件!'
-    assert os.path.isdir(args.docx_dir), 'Word文档所在目录不存在!'
+    assert os.path.isdir(args.docx_dir), f'Word文档所在目录 {args.docx_dir} 不存在!'
 
     word2excel(template_file=args.template_file,
                docx_dir=args.docx_dir,

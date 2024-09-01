@@ -94,3 +94,4 @@ def word2excel(template_file, docx_dir, output_dir='output', omit_doc_name=False
 
     output_file = get_output_file(output_dir)
     wb.save(output_file)
+    print(f'程序运行结束，Excel文件保存到 {os.path.realpath(output_file)}' )
