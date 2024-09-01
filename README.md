@@ -38,22 +38,23 @@ python word2excel.py -t <template_path> -d <docx_directory> [-o <output_director
 
 ## 示例
 
-假设我们有以下文件结构：
+本项目提供了示例模板和Word文档，结构如下：
 
 ```
-project/
+word2excel/
 ├── main_cli.py
-├── template.docx
-└── docx_files/
-    ├── file1.docx
-    ├── file2.docx
-    └── ...
+└── examples/
+    ├── template.docx
+    └── docx_files/
+        ├── file1.docx
+        ├── file2.docx
+        └── ...
 ```
 
 要将`docx_files`目录下的所有Word文档转换为Excel文件，可以执行：
 
 ```bash
-python main_cli.py -t template.docx -d docx_files
+python main_cli.py -t examples/template.docx -d examples/docx_files
 ```
 
 ## 参数说明
